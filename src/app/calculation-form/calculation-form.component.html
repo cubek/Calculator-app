@@ -1,0 +1,17 @@
+<div class="container">
+  <h1>Calculation Form</h1>
+  <form (ngSubmit)="onSubmit()" #calculationForm="ngForm">
+    <div class="form-group">
+      <label for="question1">Question 1</label>
+      <input type="text" class="form-control" id="question1"  [(ngModel)]="model.question1" name="question1">
+    </div>
+
+    <div class="form-group">
+      <label for="question2">Question2</label>
+      <input type="text" class="form-control" id="question2" [(ngModel)]="model.question2" name="question2">
+    </div>
+
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+  <button class="btn btn-primary" (click)="onReset()">Reset</button>
+</div>
